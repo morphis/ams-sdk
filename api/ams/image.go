@@ -133,6 +133,8 @@ type Image struct {
 	Architecture string `json:"architecture,omitempty" yaml:"architecture,omitempty"`
 	// Type of the image. Possible values are: container, vm
 	Type ImageType `json:"type" yaml:"type"`
+	// Variant of the image. Possible values are: android, aaos, generic, unknown
+	Variant string `json:"variant" yaml:"variant"`
 }
 
 // ImagesPost represents the fields to upload a new image
